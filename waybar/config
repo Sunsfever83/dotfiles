@@ -1,0 +1,82 @@
+{ 
+    "output": "DP-3",
+    "layer": "top",
+    "spacing": 20,
+    "height": 0,
+
+    "margin-top": 8,
+    "margin-right": 8,
+    "margin-bottom": 0,
+    "margin-left": 8,
+
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock",
+    ],
+
+    "modules-right": [
+        "tray",
+        "cpu_text",
+        "cpu",
+        "memory",
+        "pulseaudio",
+		"custom/control"
+    ],
+
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "tooltip": false
+    },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%H:%M - %a, %d %b %Y}",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 90
+        }
+    },
+
+        "memory": {
+        "format": "MEM {percentage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 80
+        }
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 100,
+        "format": "VOL {volume}%",
+        "format-bluetooth": "VOL {volume}%",
+        "nospacing": 1,
+        "on-click": "pwvucontrol",
+        "tooltip": false
+    },
+
+	"reload_on_style_change": true,
+}

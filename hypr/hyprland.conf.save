@@ -1,0 +1,26 @@
+# ~/.config/hypr/hyprland.conf
+
+# Set monitor etup (automatic for now)
+monitor=,preferred,auto,auto
+
+# Your main mod key (Mod4 = Super/Windows Key)
+$mod = SUPER
+
+# Launch terminal
+bind = $mod, Return, exec, kitty
+
+# Launch app launcher (wofi)
+bind = $mod, D, exec, wofi --show drun
+
+# Close focused window
+bind = $mod, Q, killactive
+
+# Move focus around
+bind = $mod, H, movefocus, l
+bind = $mod, L, movefocus, r
+bind = $mod, K, movefocus, u
+bind = $mod, J, movefocus, d
+
+# Move windows
+bind = $mod SHIFT, H, movewindow, l
+bind = $mod SHIFT, LFFDSFDS

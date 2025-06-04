@@ -1,0 +1,44 @@
+/* Bar Background */
+#waybar {
+   background: #000000;
+   color: #d140f9;
+}
+
+/* Modules (spacing between them) */
+#workspaces,
+#clock,
+#custom-updates,
+#custom-weather,
+#custom-logout {
+   padding: 0 10px; /* Left and right padding */
+   margin: 0 5px;   /* Space between modules */
+}
+
+/* Center Temperature Text */
+#custom-weather {
+  }
+
+/* Different background colors for modules */
+
+#custom-updates {
+   background-color: #045104;
+   color: #d140f9;
+   border-radius: 6px;
+   padding: 0 10px;
+}
+ 
+
+#custom-logout {
+   background-color: #38010c;
+   color: #d140f9;
+   border-radius: 6px;
+   padding: 0 10px;
+}
+
+#memory {
+   background-color: #045104;
+   color: #ffad5a;
+   border-radius: 6px;
+   padding: 0 10px;
+}
+
