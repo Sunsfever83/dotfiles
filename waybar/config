@@ -1,38 +1,28 @@
-{ 
-    "output": "DP-3",
+{
     "layer": "top",
-    "spacing": 20,
-    "height": 0,
+    "spacing": 5,
+    "height": 28,
 
-    "margin-top": 8,
-    "margin-right": 8,
+    "margin-top": 0,
+    "margin-right": 0,
     "margin-bottom": 0,
-    "margin-left": 8,
+    "margin-left": 0,
 
     "modules-left": [
-        "custom/launcher",
         "hyprland/workspaces"
     ],
 
     "modules-center": [
-        "clock",
+        "clock"
     ],
 
     "modules-right": [
         "tray",
-        "cpu_text",
         "cpu",
         "memory",
-        "pulseaudio",
-		"custom/control"
+        "network",
+        "pulseaudio"
     ],
-
-    "custom/launcher":{
-        "format": " ",
-        "on-click": "rofi -show drun",
-        "on-click-right": "killall rofi",
-        "tooltip": false
-    },
 
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -46,12 +36,12 @@
     },
 
     "clock": {
-        "format": "{:%H:%M - %a, %d %b %Y}",
+        "format": "{:%a %d, %H:%M}",
         "tooltip": false
     },
 
     "cpu": {
-        "format": "CPU {usage}%",
+        "format": "cpu {usage}%",
         "interval": 2,
 
         "states": {
@@ -59,8 +49,8 @@
         }
     },
 
-        "memory": {
-        "format": "MEM {percentage}%",
+    "memory": {
+        "format": "mem {percentage}%",
         "interval": 2,
 
         "states": {
@@ -68,15 +58,23 @@
         }
     },
 
-    "pulseaudio": {
-        "scroll-step": 5,
-        "max-volume": 100,
-        "format": "VOL {volume}%",
-        "format-bluetooth": "VOL {volume}%",
-        "nospacing": 1,
-        "on-click": "pwvucontrol",
+
+    "network": {
+        "format-wifi" : "wifi up",
+        "format-ethernet": "enth up",
+        "format-disconnected" : "no network",
         "tooltip": false
     },
 
-	"reload_on_style_change": true,
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "vol {volume}%",
+        "format-bluetooth": "vol {volume}%",
+        "nospacing": 1,
+        "on-click": "pavucontrol",
+        "tooltip": false
+    }
 }
+
+
