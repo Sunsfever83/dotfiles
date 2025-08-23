@@ -22,6 +22,7 @@ tooltip {
 #tray,
 #cpu,
 #memory,
+#bluetooth,
 #network,
 #pulseaudio {
 margin: 6px 6px 6px 0px;
@@ -34,7 +35,7 @@ padding: 0 12px;
 border-radius: 0px;
 background: #1d1160;          /* purple chip */
 color: #f9ad1b;               /* amber text */
-border: 1px solid rgba(255,255,255,0.07);
+border: 1px solid #b95915;
 font-weight: 600;
 letter-spacing: 0.2px;
 box-shadow:
@@ -59,13 +60,14 @@ background-color: #e78a4e;
 color: #f9ad1b;
 }
 
+#mpris,
 #clock {
 margin: 4px 8px;
 padding: 0 12px;
 border-radius: 0px;
 background: #1d1160;          /* purple chip */
 color: #f9ad1b;               /* amber text */
-border: 1px solid rgba(255,255,255,0.07);
+border: 1px solid #b95915;
 font-weight: 600;
 letter-spacing: 0.2px;
 box-shadow:
@@ -76,6 +78,7 @@ box-shadow:
 #tray,
 #cpu,
 #memory,
+#bluetooth,
 #network,
 #pulseaudio {
 margin: 4px 8px;
@@ -83,7 +86,7 @@ padding: 0 12px;
 border-radius: 0px;
 background: #1d1160;          /* purple chip */
 color: #f9ad1b;               /* amber text */
-border: 1px solid rgba(255,255,255,0.07);
+border: 1px solid #b95915;
 font-weight: 600;
 letter-spacing: 0.2px;
 box-shadow:
@@ -98,7 +101,7 @@ padding: 0 12px;
 border-radius: 0px;
 background: #1d1160;          /* purple chip */
 color: #f9ad1b;               /* amber text */
-border: 1px solid rgba(255,255,255,0.07);
+border: 1px solid #b95915;
 font-weight: 600;
 letter-spacing: 0.2px;
 box-shadow:
