@@ -8,8 +8,10 @@
     "margin-bottom": 0,
     "margin-left": 0,
 
+    "output": "HDMI-A-1",
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "tray"
     ],
 
     "modules-center": [
@@ -18,7 +20,6 @@
     ],
 
     "modules-right": [
-        "tray",
         "cpu",
         "memory",
         "bluetooth",
