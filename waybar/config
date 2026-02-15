@@ -22,7 +22,6 @@
     "modules-right": [
         "cpu",
         "memory",
-        "bluetooth",
         "network",
         "pulseaudio"
     ],
@@ -69,14 +68,6 @@
             "critical": 80
         }
     },
-
-    "bluetooth": {
-    "format": "bt: {status}",
-    "format-on": "bt: on",
-    "format-off": "bt: off",
-    "on-click": "blueman-manager",
-    "tooltip": false
-},
 
 
     "network": {
